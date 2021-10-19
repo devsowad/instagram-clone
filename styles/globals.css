@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type='text']:not(.default-style),
+  input[type='password']:not(.default-style),
+  input[type='email']:not(.default-style),
+  input[type='number']:not(.default-style),
+  input[type='url']:not(.default-style),
+  input[type='date']:not(.default-style),
+  input[type='datetime-local']:not(.default-style),
+  input[type='month']:not(.default-style),
+  input[type='week']:not(.default-style),
+  input[type='time']:not(.default-style),
+  input[type='search']:not(.default-style),
+  input[type='tel']:not(.default-style),
+  input[type='checkbox']:not(.default-style),
+  input[type='radio']:not(.default-style),
+  select:not(.default-style),
+  select[multiple]:not(.default-style),
+  textarea:not(.default-style) {
+    @apply rounded-md border-gray-400 dark:border-gray-500 focus:ring-brand-600 focus:border-brand-600 transition bg-gray-100 dark:bg-gray-600 dark:placeholder-gray-400;
+  }
+
+  input[type='search']::-webkit-search-decoration,
+  input[type='search']::-webkit-search-cancel-button,
+  input[type='search']::-webkit-search-results-button,
+  input[type='search']::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+  }
+
+  .header-icon {
+    @apply text-gray-800 hover:text-gray-900 dark:text-gray-200 dark:hover:text-gray-100 hover:scale-125 relative transition duration-100 ease-out;
+  }
+
+  .story-image {
+    border: 2px solid !important;
+  }
+  .story-image {
+    @apply rounded-full border-brand-500 p-0.5 !important;
+  }
+
+  .body-color {
+    @apply bg-gray-100 dark:bg-gray-900 dark:text-white;
+  }
+
+  .content-bg {
+    @apply bg-gray-50 dark:bg-gray-700 dark:border-gray-600;
+  }
+
+  .gray-300 {
+    @apply text-gray-700 dark:text-gray-300;
+  }
+
+  .gray-400 {
+    @apply text-gray-700 dark:text-gray-400;
+  }
+}
